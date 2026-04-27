@@ -22,6 +22,6 @@ Target: BECE / Common Entrance candidates (JSS1–JSS3)
 ## SS Content (11 files)
 Target: WAEC / NECO / JAMB candidates (SS1–SS3)
 
-Generated: 2026-04-24T06:34:43Z
+Generated: 2026-04-27T06:47:54Z
 Pipeline: Akulearn_docs content generation pipeline
 Curriculum: NERDC / FME
