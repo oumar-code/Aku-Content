@@ -1,0 +1,23 @@
+{
+  "description": "BECE / Common Entrance past questions index",
+  "exam_bodies": [
+    "WAEC Nigeria",
+    "NECO",
+    "NCEE",
+    "State Ministries"
+  ],
+  "class_levels": [
+    "JSS1",
+    "JSS2",
+    "JSS3"
+  ],
+  "subjects": [
+    "mathematics",
+    "english_language",
+    "basic_science",
+    "social_studies",
+    "basic_technology",
+    "civic_education"
+  ],
+  "generated_at": "2026-04-29T07:04:50.866283+00:00"
+}

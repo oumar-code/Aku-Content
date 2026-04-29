@@ -1,0 +1,61 @@
+{
+  "subject": "basic_science",
+  "subject_code": "BSC",
+  "exam": "BECE",
+  "source_body": "WAEC Nigeria / NECO / State Ministries of Education",
+  "class_levels": [
+    "JSS1",
+    "JSS2",
+    "JSS3"
+  ],
+  "years": [
+    2023
+  ],
+  "question_count": 2,
+  "generated_at": "2026-04-29T07:04:50.865780+00:00",
+  "generator_version": "1.0.0",
+  "questions": [
+    {
+      "id": "BSC-BECE-2023-001",
+      "topic": "Living Things and Classification",
+      "class_level": "JSS3",
+      "year": 2023,
+      "exam": "BECE",
+      "body": "Which of the following is a characteristic of living things?",
+      "options": [
+        "Hardness",
+        "Respiration",
+        "Solubility",
+        "Density"
+      ],
+      "correct_option": 1,
+      "answer": "Respiration",
+      "explanation": "Respiration (R in MRS GREN) is a characteristic of all living things. Hardness, solubility and density are physical properties of matter.",
+      "difficulty": "easy",
+      "marks": 1,
+      "source": "sample",
+      "lo_id": "LO:NERDC:BSC:JSS3:T1:001"
+    },
+    {
+      "id": "BSC-BECE-2023-002",
+      "topic": "Electricity",
+      "class_level": "JSS3",
+      "year": 2023,
+      "exam": "BECE",
+      "body": "A resistor has a resistance of 10 Ω and is connected to a 5 V battery. What is the current flowing through it?",
+      "options": [
+        "50 A",
+        "2 A",
+        "0.5 A",
+        "15 A"
+      ],
+      "correct_option": 2,
+      "answer": "0.5 A",
+      "explanation": "Ohm's Law: I = V/R = 5/10 = 0.5 A.",
+      "difficulty": "medium",
+      "marks": 1,
+      "source": "sample",
+      "lo_id": "LO:NERDC:BSC:JSS3:T8:001"
+    }
+  ]
+}
