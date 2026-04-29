@@ -1,0 +1,61 @@
+{
+  "subject": "english_language",
+  "subject_code": "ENG",
+  "exam": "BECE",
+  "source_body": "WAEC Nigeria / NECO / State Ministries of Education",
+  "class_levels": [
+    "JSS1",
+    "JSS2",
+    "JSS3"
+  ],
+  "years": [
+    2023
+  ],
+  "question_count": 2,
+  "generated_at": "2026-04-29T07:04:50.865595+00:00",
+  "generator_version": "1.0.0",
+  "questions": [
+    {
+      "id": "ENG-BECE-2023-001",
+      "topic": "Parts of Speech",
+      "class_level": "JSS3",
+      "year": 2023,
+      "exam": "BECE",
+      "body": "Identify the part of speech of the underlined word: \"She runs very QUICKLY.\"",
+      "options": [
+        "Adjective",
+        "Verb",
+        "Adverb",
+        "Noun"
+      ],
+      "correct_option": 2,
+      "answer": "Adverb",
+      "explanation": "\"Quickly\" modifies the verb \"runs\" — it tells us HOW she runs → adverb.",
+      "difficulty": "easy",
+      "marks": 1,
+      "source": "sample",
+      "lo_id": "LO:NERDC:ENG:JSS3:T1:001"
+    },
+    {
+      "id": "ENG-BECE-2023-002",
+      "topic": "Direct and Indirect Speech",
+      "class_level": "JSS3",
+      "year": 2023,
+      "exam": "BECE",
+      "body": "Change to indirect speech: She said, \"I am going to school.\"",
+      "options": [
+        "She said that she is going to school.",
+        "She said that she was going to school.",
+        "She says that she was going to school.",
+        "She said that I am going to school."
+      ],
+      "correct_option": 1,
+      "answer": "She said that she was going to school.",
+      "explanation": "In indirect speech with past reporting verb (\"said\"), present tense \"am\" changes to past \"was\".",
+      "difficulty": "medium",
+      "marks": 1,
+      "source": "sample",
+      "lo_id": "LO:NERDC:ENG:JSS3:T6:001"
+    }
+  ]
+}
