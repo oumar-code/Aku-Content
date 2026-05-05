@@ -16,10 +16,16 @@ Offline content library for the Aku Platform — consumed by **Akudemy** and **A
 | `content/encyclopedia/` | Offline Wikipedia (.zim) |
 | `content/tools/` | Interactive learning tools |
 | `content/news_corpus/` | Multilingual news corpus (EN/HA/YO) + translation corpora |
-| `content_templates/` | WAEC/NERDC lesson CSV templates (8 subjects) |
+| `content_templates/` | WAEC/NERDC lesson CSV templates (9 subjects) |
+| `data/exam_papers/bece/` | BECE / Common Entrance past questions (JSON) |
+| `data/exam_papers/waec/` | WAEC / SSCE past papers (JSON + PDF) |
 
 > **Status**: Directory structure initialised. Actual content pending full migration.
 > See [migration tracker](https://github.com/oumar-code/Akulearn_docs/blob/main/docs/ecosystem-map.md).
+
+## Contributing / Migrating Content
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for step-by-step instructions on copying textbooks, content templates, and exam papers from your local machine into this repo.
 
 ## Git LFS
 
