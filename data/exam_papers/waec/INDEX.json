@@ -1,0 +1,23 @@
+{
+  "description": "WAEC / SSCE past questions index",
+  "exam_bodies": [
+    "WAEC Nigeria"
+  ],
+  "class_levels": [
+    "SS1",
+    "SS2",
+    "SS3"
+  ],
+  "subjects": [
+    "mathematics",
+    "english_language",
+    "biology",
+    "chemistry",
+    "physics",
+    "economics",
+    "government",
+    "literature_in_english",
+    "geography"
+  ],
+  "generated_at": "2026-05-05T05:07:10.650+00:00"
+}
