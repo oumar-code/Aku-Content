@@ -2,6 +2,12 @@
 
 This guide explains how to copy textbooks, content templates, and exam papers from your local machine into this repository.
 
+> **Preferred approach — automated generation**: Use **[Aku-Content Forge](forge/README.md)**
+> to generate content with a single command rather than copying files manually.
+> Forge stores all binary assets (images, audio, video) in **Backblaze B2** so they
+> never consume Git LFS quota.  Manual migration below is still useful for existing
+> hand-authored content and PDF exam papers.
+
 ---
 
 ## Prerequisites

@@ -1,0 +1,94 @@
+# Aku-Content Forge — Pipeline Configuration
+# Adjust providers, models, and B2 settings to match your credentials.
+
+# ---------------------------------------------------------------------------
+# Curriculum targets
+# ---------------------------------------------------------------------------
+subjects:
+  - mathematics
+  - biology
+  - chemistry
+  - physics
+  - english_language
+  - economics
+  - geography
+  - government
+  - literature_in_english
+
+levels:
+  - ss1
+  - ss2
+  - ss3
+
+# Number of chapters to generate per subject/level run
+chapters_per_level: 10
+
+# Languages for audio narration
+narration_languages:
+  - en   # English
+  - ha   # Hausa
+  - yo   # Yoruba
+
+# ---------------------------------------------------------------------------
+# Genblaze / provider settings
+# ---------------------------------------------------------------------------
+providers:
+  text:
+    provider: openai          # openai | google | anthropic
+    model: gpt-4o
+    temperature: 0.7
+    max_tokens: 4096
+
+  images:
+    provider: stability       # stability | openai (dall-e-3)
+    model: stable-diffusion-3-medium
+    width: 1024
+    height: 1024
+    steps: 30
+
+  audio:
+    provider: elevenlabs
+    # Voice IDs per language — replace with your ElevenLabs voice IDs.
+    # IMPORTANT: Hausa (ha) and Yoruba (yo) narration will be skipped if
+    # the corresponding voice IDs are left empty. Visit elevenlabs.io to
+    # clone or select multilingual voices and paste the IDs below.
+    voices:
+      en: EXAVITQu4vr4xnSDxMaL   # default English narrator
+      ha: ""                       # set your Hausa voice ID
+      yo: ""                       # set your Yoruba voice ID
+    model: eleven_multilingual_v2
+
+  video:
+    provider: runway              # runway | luma
+    model: gen3a_turbo
+    duration_seconds: 45
+    resolution: "1280x720"
+
+# ---------------------------------------------------------------------------
+# Backblaze B2 storage
+# ---------------------------------------------------------------------------
+b2:
+  # Set credentials via environment variables:
+  #   B2_APPLICATION_KEY_ID
+  #   B2_APPLICATION_KEY
+  bucket_prefix: aku             # buckets: aku-textbooks, aku-audio, aku-video, aku-images
+  region: us-west-004            # your B2 region
+  public_cdn: true               # expose bucket files via friendly URL
+  # Optional: Cloudflare or B2 CDN hostname (leave blank to use native B2 URLs)
+  cdn_base_url: ""
+
+# ---------------------------------------------------------------------------
+# Output paths (relative to repo root)
+# ---------------------------------------------------------------------------
+output:
+  textbooks: content/textbooks
+  flashcards: content/flashcards
+  quizzes: content/quizzes
+  news_corpus: content/news_corpus
+
+# ---------------------------------------------------------------------------
+# Provenance
+# ---------------------------------------------------------------------------
+provenance:
+  record: true          # write a provenance.json alongside every generated asset
+  include_prompt: true  # include the full prompt in the provenance record

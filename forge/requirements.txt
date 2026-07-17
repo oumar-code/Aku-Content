@@ -1,0 +1,26 @@
+# Aku-Content Forge — Python dependencies
+
+# Genblaze SDK (Backblaze's open-source generative media orchestration SDK)
+genblaze>=0.1.0
+
+# Backblaze B2 / S3-compatible storage (boto3 with S3v4 signing)
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Config parsing
+pyyaml>=6.0.1
+
+# CLI / utility
+click>=8.1.7
+
+# HTTP (used internally by Genblaze and boto3 — pinned for security)
+requests>=2.32.0
+urllib3>=2.2.0
+certifi>=2024.2.2
+
+# Provider SDKs (install only the ones you use)
+# openai>=1.30.0
+# google-generativeai>=0.5.0
+# stability-sdk>=0.8.5
+# elevenlabs>=1.2.0
+# runwayml>=1.0.0
