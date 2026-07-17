@@ -26,6 +26,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+# B2 object metadata has a 2 KB total limit; leave 100 bytes of headroom for
+# the metadata key name and any encoding overhead.
+B2_METADATA_MAX_BYTES = 1900
+
 import boto3
 from botocore.config import Config
 
@@ -106,7 +110,7 @@ class B2Client:
         if provenance:
             # B2 metadata values must be strings and ≤ 2 KB total
             extra_args["Metadata"] = {
-                "provenance": _truncate(json.dumps(provenance), 1900),
+                "provenance": _truncate(json.dumps(provenance), B2_METADATA_MAX_BYTES),
             }
 
         self._s3.put_object(

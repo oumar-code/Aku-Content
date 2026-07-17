@@ -114,13 +114,13 @@ CURRICULUM: dict[str, dict[str, list[str]]] = {
     },
 }
 
-# Default fallback topics for subjects not yet in CURRICULUM
-_DEFAULT_TOPICS = [f"Topic {i + 1}" for i in range(10)]
+# Placeholder topic names used when a subject/level is not yet in CURRICULUM.
+_PLACEHOLDER_TOPICS = [f"Topic {i + 1}" for i in range(10)]
 
 
 def _get_topics(subject: str, level: str, n: int) -> list[str]:
     topics = (
-        CURRICULUM.get(subject, {}).get(level, _DEFAULT_TOPICS)
+        CURRICULUM.get(subject, {}).get(level, _PLACEHOLDER_TOPICS)
     )
     return topics[:n]
 

@@ -129,7 +129,7 @@ class AudioStage:
             chapter_json_path.read_text(encoding="utf-8")
         )
 
-        audio_urls: dict[str, str] = {}
+        audio_urls: dict[str, str | list[str]] = {}
 
         # ---- Chapter narrations per language ----------------------------
         for lang in self.languages:
@@ -190,7 +190,7 @@ class AudioStage:
                     card_bytes, "audio", card_key, "audio/mpeg", card_prov
                 )
                 fc_audio_urls.append(card_url)
-            audio_urls["flashcard_audio"] = fc_audio_urls  # type: ignore[assignment]
+            audio_urls["flashcard_audio"] = fc_audio_urls
 
         manifest.setdefault("b2", {})["audio"] = audio_urls
 

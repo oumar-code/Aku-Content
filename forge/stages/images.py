@@ -104,7 +104,7 @@ class ImageStage:
             "  ImageStage ch%02d: %s/%s — %s", chapter, subject, level, topic
         )
 
-        images: dict[str, str] = {}
+        images: dict[str, str | list[str]] = {}
 
         # ---- Thumbnail --------------------------------------------------
         thumb_prompt = _THUMBNAIL_TEMPLATE.format(
@@ -144,7 +144,7 @@ class ImageStage:
                     )
                     diagram_urls.append(url)
                     logger.debug("    Diagram uploaded: %s", url)
-            images["diagrams"] = diagram_urls  # type: ignore[assignment]
+            images["diagrams"] = diagram_urls
 
         manifest.setdefault("b2", {})["images"] = images
 

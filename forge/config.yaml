@@ -48,7 +48,10 @@ providers:
 
   audio:
     provider: elevenlabs
-    # Voice IDs per language — replace with your ElevenLabs voice IDs
+    # Voice IDs per language — replace with your ElevenLabs voice IDs.
+    # IMPORTANT: Hausa (ha) and Yoruba (yo) narration will be skipped if
+    # the corresponding voice IDs are left empty. Visit elevenlabs.io to
+    # clone or select multilingual voices and paste the IDs below.
     voices:
       en: EXAVITQu4vr4xnSDxMaL   # default English narrator
       ha: ""                       # set your Hausa voice ID
