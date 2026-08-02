@@ -1,0 +1,62 @@
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "chapter_number": 1,
+  "topic": "Indices",
+  "learning_objectives": [
+    "Define the core ideas in Indices",
+    "Solve basic exam-style questions on Indices",
+    "Relate Indices to real classroom examples"
+  ],
+  "introduction": "This dry-run chapter preview shows the file structure for Indices. It does not call an external model, but it preserves the expected output shape.",
+  "sections": [
+    {
+      "heading": "Foundations of Indices",
+      "body": "Preview content for Indices. Replace this with generated curriculum text during a live run.",
+      "worked_examples": [
+        "Worked example placeholder for Indices."
+      ],
+      "diagram_hints": [
+        "[DIAGRAM: labelled concept diagram for Indices]"
+      ]
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Indices",
+      "definition": "Preview definition for Indices."
+    },
+    {
+      "term": "Exam skill",
+      "definition": "Ability to answer curriculum-aligned questions."
+    }
+  ],
+  "summary": "Dry-run summary placeholder for Indices.",
+  "practice_questions": [
+    {
+      "type": "objective",
+      "question": "Which statement best describes Indices?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanation": "Preview explanation."
+    },
+    {
+      "type": "theory",
+      "question": "Explain one application of Indices.",
+      "options": [],
+      "answer": "Any correct curriculum-aligned explanation.",
+      "explanation": "Preview explanation."
+    }
+  ],
+  "further_reading": [
+    "NERDC scheme of work",
+    "Class notes and teacher-approved revision guides"
+  ],
+  "generated_at": "2026-08-02T17:07:23.013820+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

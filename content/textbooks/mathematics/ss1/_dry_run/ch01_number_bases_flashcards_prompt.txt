@@ -1,0 +1,15 @@
+Create a flashcard deck for a Nigerian SS student studying Mathematics (SS1), topic: Number Bases.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "topic": "Number Bases",
+  "flashcards": [
+    {"front": "...", "back": "...", "difficulty": "easy|medium|hard"}
+  ],
+  "generated_at": "2026-08-02T16:57:21.627579+00:00",
+  "generator": "aku-content-forge/text-stage"
+}
+
+Generate 15 flashcards covering key terms, formulas, and exam-style prompts.

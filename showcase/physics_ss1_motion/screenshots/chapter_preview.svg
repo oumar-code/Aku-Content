@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <rect x="60" y="60" width="1080" height="580" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <rect x="90" y="110" width="260" height="40" rx="8" fill="#0f172a"/>
+  <text x="120" y="138" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">Chapter Preview</text>
+  <text x="90" y="210" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">Physics SS1 — Motion</text>
+  <text x="90" y="270" font-family="Arial, sans-serif" font-size="24" fill="#334155">Learning objectives, examples, and practice questions</text>
+  <rect x="90" y="320" width="360" height="140" rx="16" fill="#e0f2fe"/>
+  <text x="120" y="360" font-family="Arial, sans-serif" font-size="24" fill="#0c4a6e">Objectives</text>
+  <text x="120" y="395" font-family="Arial, sans-serif" font-size="20" fill="#0f172a">Define motion</text>
+  <text x="120" y="425" font-family="Arial, sans-serif" font-size="20" fill="#0f172a">Solve exam-style questions</text>
+  <rect x="485" y="320" width="360" height="140" rx="16" fill="#dcfce7"/>
+  <text x="515" y="360" font-family="Arial, sans-serif" font-size="24" fill="#166534">Summary</text>
+  <text x="515" y="395" font-family="Arial, sans-serif" font-size="20" fill="#0f172a">Concept overview and key terms</text>
+  <text x="515" y="425" font-family="Arial, sans-serif" font-size="20" fill="#0f172a">Ready for revision</text>
+</svg>

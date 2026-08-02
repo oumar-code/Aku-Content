@@ -1,0 +1,46 @@
+{
+  "subject": "chemistry",
+  "level": "ss1",
+  "chapter_count": 1,
+  "generated_at": "2026-08-02T17:08:40.768149+00:00",
+  "generator": "aku-content-forge",
+  "chapters": [
+    {
+      "subject": "chemistry",
+      "level": "ss1",
+      "chapter_number": 1,
+      "topic": "Introduction to Chemistry",
+      "slug": "introduction_to_chemistry",
+      "b2": {
+        "chapter_json": "dry-run://aku-textbooks/chemistry/ss1/ch01_introduction_to_chemistry.json",
+        "chapter_md": "dry-run://aku-textbooks/chemistry/ss1/ch01_introduction_to_chemistry.md",
+        "flashcards": "dry-run://aku-textbooks/flashcards/chemistry/ss1/ch01_introduction_to_chemistry.json",
+        "quiz": "dry-run://aku-textbooks/quizzes/chemistry/ss1/ch01_introduction_to_chemistry.json",
+        "images": {
+          "thumbnail": "dry-run://aku-images/chemistry/ss1/ch01_introduction_to_chemistry_thumb.png",
+          "diagrams": [
+            "dry-run://aku-images/chemistry/ss1/ch01_introduction_to_chemistry_sec1_diag1.png"
+          ]
+        },
+        "audio": {},
+        "video": {
+          "explainer": "dry-run://aku-video/chemistry/ss1/ch01_introduction_to_chemistry.mp4"
+        }
+      },
+      "local": {
+        "chapter_json": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/ch01_introduction_to_chemistry.json",
+        "chapter_md": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/ch01_introduction_to_chemistry.md",
+        "flashcards": "/workspaces/Aku-Content/content/flashcards/chemistry/ss1/ch01_introduction_to_chemistry.json",
+        "quiz": "/workspaces/Aku-Content/content/quizzes/chemistry/ss1/ch01_introduction_to_chemistry.json"
+      },
+      "dry_run": {
+        "chapter_prompt": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_chapter_prompt.txt",
+        "flashcards_prompt": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_flashcards_prompt.txt",
+        "quiz_prompt": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_quiz_prompt.txt",
+        "images_prompts": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_images_prompts.json",
+        "audio_prompts": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_audio_prompts.json",
+        "video_prompt": "/workspaces/Aku-Content/content/textbooks/chemistry/ss1/_dry_run/ch01_introduction_to_chemistry_video_prompt.txt"
+      }
+    }
+  ]
+}

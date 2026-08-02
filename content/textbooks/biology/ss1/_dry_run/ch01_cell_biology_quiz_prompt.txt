@@ -1,0 +1,22 @@
+Create a 10-question multiple-choice quiz for a Nigerian SS student studying Biology (SS1), topic: Cell Biology.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "biology",
+  "level": "ss1",
+  "topic": "Cell Biology",
+  "questions": [
+    {
+      "id": "Q001",
+      "body": "...",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "correct_option": 0,
+      "answer": "A. ...",
+      "explanation": "...",
+      "difficulty": "easy|medium|hard",
+      "marks": 1
+    }
+  ],
+  "generated_at": "2026-08-02T16:59:59.404340+00:00",
+  "generator": "aku-content-forge/text-stage"
+}

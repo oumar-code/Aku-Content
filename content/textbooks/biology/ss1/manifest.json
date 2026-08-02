@@ -1,0 +1,46 @@
+{
+  "subject": "biology",
+  "level": "ss1",
+  "chapter_count": 1,
+  "generated_at": "2026-08-02T17:06:04.554622+00:00",
+  "generator": "aku-content-forge",
+  "chapters": [
+    {
+      "subject": "biology",
+      "level": "ss1",
+      "chapter_number": 1,
+      "topic": "Nutrition",
+      "slug": "nutrition",
+      "b2": {
+        "chapter_json": "dry-run://aku-textbooks/biology/ss1/ch01_nutrition.json",
+        "chapter_md": "dry-run://aku-textbooks/biology/ss1/ch01_nutrition.md",
+        "flashcards": "dry-run://aku-textbooks/flashcards/biology/ss1/ch01_nutrition.json",
+        "quiz": "dry-run://aku-textbooks/quizzes/biology/ss1/ch01_nutrition.json",
+        "images": {
+          "thumbnail": "dry-run://aku-images/biology/ss1/ch01_nutrition_thumb.png",
+          "diagrams": [
+            "dry-run://aku-images/biology/ss1/ch01_nutrition_sec1_diag1.png"
+          ]
+        },
+        "audio": {},
+        "video": {
+          "explainer": "dry-run://aku-video/biology/ss1/ch01_nutrition.mp4"
+        }
+      },
+      "local": {
+        "chapter_json": "/workspaces/Aku-Content/content/textbooks/biology/ss1/ch01_nutrition.json",
+        "chapter_md": "/workspaces/Aku-Content/content/textbooks/biology/ss1/ch01_nutrition.md",
+        "flashcards": "/workspaces/Aku-Content/content/flashcards/biology/ss1/ch01_nutrition.json",
+        "quiz": "/workspaces/Aku-Content/content/quizzes/biology/ss1/ch01_nutrition.json"
+      },
+      "dry_run": {
+        "chapter_prompt": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_chapter_prompt.txt",
+        "flashcards_prompt": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_flashcards_prompt.txt",
+        "quiz_prompt": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_quiz_prompt.txt",
+        "images_prompts": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_images_prompts.json",
+        "audio_prompts": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_audio_prompts.json",
+        "video_prompt": "/workspaces/Aku-Content/content/textbooks/biology/ss1/_dry_run/ch01_nutrition_video_prompt.txt"
+      }
+    }
+  ]
+}

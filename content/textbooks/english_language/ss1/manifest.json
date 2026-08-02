@@ -1,0 +1,46 @@
+{
+  "subject": "english_language",
+  "level": "ss1",
+  "chapter_count": 1,
+  "generated_at": "2026-08-02T17:15:16.206841+00:00",
+  "generator": "aku-content-forge",
+  "chapters": [
+    {
+      "subject": "english_language",
+      "level": "ss1",
+      "chapter_number": 1,
+      "topic": "Parts of Speech",
+      "slug": "parts_of_speech",
+      "b2": {
+        "chapter_json": "dry-run://aku-textbooks/english_language/ss1/ch01_parts_of_speech.json",
+        "chapter_md": "dry-run://aku-textbooks/english_language/ss1/ch01_parts_of_speech.md",
+        "flashcards": "dry-run://aku-textbooks/flashcards/english_language/ss1/ch01_parts_of_speech.json",
+        "quiz": "dry-run://aku-textbooks/quizzes/english_language/ss1/ch01_parts_of_speech.json",
+        "images": {
+          "thumbnail": "dry-run://aku-images/english_language/ss1/ch01_parts_of_speech_thumb.png",
+          "diagrams": [
+            "dry-run://aku-images/english_language/ss1/ch01_parts_of_speech_sec1_diag1.png"
+          ]
+        },
+        "audio": {},
+        "video": {
+          "explainer": "dry-run://aku-video/english_language/ss1/ch01_parts_of_speech.mp4"
+        }
+      },
+      "local": {
+        "chapter_json": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/ch01_parts_of_speech.json",
+        "chapter_md": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/ch01_parts_of_speech.md",
+        "flashcards": "/workspaces/Aku-Content/content/flashcards/english_language/ss1/ch01_parts_of_speech.json",
+        "quiz": "/workspaces/Aku-Content/content/quizzes/english_language/ss1/ch01_parts_of_speech.json"
+      },
+      "dry_run": {
+        "chapter_prompt": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_chapter_prompt.txt",
+        "flashcards_prompt": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_flashcards_prompt.txt",
+        "quiz_prompt": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_quiz_prompt.txt",
+        "images_prompts": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_images_prompts.json",
+        "audio_prompts": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_audio_prompts.json",
+        "video_prompt": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_video_prompt.txt"
+      }
+    }
+  ]
+}

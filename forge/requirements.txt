@@ -3,6 +3,11 @@
 # Genblaze SDK (Backblaze's open-source generative media orchestration SDK)
 genblaze>=0.1.0
 
+# Provider adapters required by the current default Forge configuration
+genblaze-openai
+genblaze-elevenlabs
+genblaze-runway
+
 # Backblaze B2 / S3-compatible storage (boto3 with S3v4 signing)
 boto3>=1.34.0
 botocore>=1.34.0

@@ -1,0 +1,49 @@
+You are an expert curriculum writer producing content aligned to the Nigerian NERDC / WAEC / BECE syllabus.
+
+Write a detailed textbook chapter for:
+  Subject : Mathematics
+  Level   : SS1 (Senior Secondary School Year 1)
+  Topic   : Number Bases
+
+The chapter MUST include:
+1. Learning Objectives (3–5 bullet points)
+2. Introduction / Background (2–3 paragraphs, accessible to a 15-year-old)
+3. Core Content sections (3–5 sections, each with a heading, explanation,
+   worked examples, and diagrams described as [DIAGRAM: brief description])
+4. Key Terms / Glossary (5–10 terms with concise definitions)
+5. Summary (one paragraph)
+6. Practice Questions (5 questions: 3 objective + 2 theory)
+7. Further Reading (2–3 suggested resources)
+
+Tone: clear, encouraging, curriculum-faithful. Avoid jargon without explanation.
+Return ONLY valid JSON matching this exact schema — no markdown fences:
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "chapter_number": 1,
+  "topic": "Number Bases",
+  "learning_objectives": ["..."],
+  "introduction": "...",
+  "sections": [
+    {
+      "heading": "...",
+      "body": "...",
+      "worked_examples": ["..."],
+      "diagram_hints": ["[DIAGRAM: ...]"]
+    }
+  ],
+  "key_terms": [{"term": "...", "definition": "..."}],
+  "summary": "...",
+  "practice_questions": [
+    {
+      "type": "objective|theory",
+      "question": "...",
+      "options": ["A", "B", "C", "D"],
+      "answer": "A",
+      "explanation": "..."
+    }
+  ],
+  "further_reading": ["..."],
+  "generated_at": "2026-08-02T16:57:21.627579+00:00",
+  "generator": "aku-content-forge/text-stage"
+}

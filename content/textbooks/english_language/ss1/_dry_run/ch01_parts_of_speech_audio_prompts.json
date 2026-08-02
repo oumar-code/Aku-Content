@@ -1,0 +1,58 @@
+{
+  "narrations": {
+    "en": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_narration_en.txt",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    },
+    "ha": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_narration_ha.txt",
+      "voice_id": ""
+    },
+    "yo": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/english_language/ss1/_dry_run/ch01_parts_of_speech_narration_yo.txt",
+      "voice_id": ""
+    }
+  },
+  "flashcards": [
+    {
+      "card_index": 1,
+      "text": "Parts of Speech concept 1"
+    },
+    {
+      "card_index": 2,
+      "text": "Parts of Speech concept 2"
+    },
+    {
+      "card_index": 3,
+      "text": "Parts of Speech concept 3"
+    },
+    {
+      "card_index": 4,
+      "text": "Parts of Speech concept 4"
+    },
+    {
+      "card_index": 5,
+      "text": "Parts of Speech concept 5"
+    },
+    {
+      "card_index": 6,
+      "text": "Parts of Speech concept 6"
+    },
+    {
+      "card_index": 7,
+      "text": "Parts of Speech concept 7"
+    },
+    {
+      "card_index": 8,
+      "text": "Parts of Speech concept 8"
+    },
+    {
+      "card_index": 9,
+      "text": "Parts of Speech concept 9"
+    },
+    {
+      "card_index": 10,
+      "text": "Parts of Speech concept 10"
+    }
+  ]
+}

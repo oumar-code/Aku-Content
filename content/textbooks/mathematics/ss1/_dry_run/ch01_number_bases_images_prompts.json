@@ -1,0 +1,11 @@
+{
+  "thumbnail_prompt": "A clean, colourful educational poster thumbnail for a Nigerian SS textbook chapter. Topic: Number Bases. Subject: Mathematics. Bold title text, simple icons, bright colours, academic style, white background.",
+  "diagram_prompts": [
+    {
+      "section": 1,
+      "diagram_index": 1,
+      "prompt": "Educational diagram for a Nigerian high-school mathematics textbook. Topic: Number Bases. Diagram: labelled concept diagram for Number Bases. Clean white background, accurate scientific labels, vector illustration style.",
+      "object_key": "mathematics/ss1/ch01_number_bases_sec1_diag1.png"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "subject": "physics",
+  "level": "ss1",
+  "chapter_count": 1,
+  "generated_at": "2026-08-02T17:19:57.681135+00:00",
+  "generator": "aku-content-forge",
+  "chapters": [
+    {
+      "subject": "physics",
+      "level": "ss1",
+      "chapter_number": 1,
+      "topic": "Motion",
+      "slug": "motion",
+      "b2": {
+        "chapter_json": "dry-run://aku-textbooks/physics/ss1/ch01_motion.json",
+        "chapter_md": "dry-run://aku-textbooks/physics/ss1/ch01_motion.md",
+        "flashcards": "dry-run://aku-textbooks/flashcards/physics/ss1/ch01_motion.json",
+        "quiz": "dry-run://aku-textbooks/quizzes/physics/ss1/ch01_motion.json",
+        "images": {
+          "thumbnail": "dry-run://aku-images/physics/ss1/ch01_motion_thumb.png",
+          "diagrams": [
+            "dry-run://aku-images/physics/ss1/ch01_motion_sec1_diag1.png"
+          ]
+        },
+        "audio": {},
+        "video": {
+          "explainer": "dry-run://aku-video/physics/ss1/ch01_motion.mp4"
+        }
+      },
+      "local": {
+        "chapter_json": "/workspaces/Aku-Content/content/textbooks/physics/ss1/ch01_motion.json",
+        "chapter_md": "/workspaces/Aku-Content/content/textbooks/physics/ss1/ch01_motion.md",
+        "flashcards": "/workspaces/Aku-Content/content/flashcards/physics/ss1/ch01_motion.json",
+        "quiz": "/workspaces/Aku-Content/content/quizzes/physics/ss1/ch01_motion.json"
+      },
+      "dry_run": {
+        "chapter_prompt": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_chapter_prompt.txt",
+        "flashcards_prompt": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_flashcards_prompt.txt",
+        "quiz_prompt": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_quiz_prompt.txt",
+        "images_prompts": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_images_prompts.json",
+        "audio_prompts": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_audio_prompts.json",
+        "video_prompt": "/workspaces/Aku-Content/content/textbooks/physics/ss1/_dry_run/ch01_motion_video_prompt.txt"
+      }
+    }
+  ]
+}

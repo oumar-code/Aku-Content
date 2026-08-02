@@ -1,0 +1,11 @@
+{
+  "thumbnail_prompt": "A clean, colourful educational poster thumbnail for a Nigerian SS textbook chapter. Topic: Introduction to Chemistry. Subject: Chemistry. Bold title text, simple icons, bright colours, academic style, white background.",
+  "diagram_prompts": [
+    {
+      "section": 1,
+      "diagram_index": 1,
+      "prompt": "Educational diagram for a Nigerian high-school chemistry textbook. Topic: Introduction to Chemistry. Diagram: labelled concept diagram for Introduction to Chemistry. Clean white background, accurate scientific labels, vector illustration style.",
+      "object_key": "chemistry/ss1/ch01_introduction_to_chemistry_sec1_diag1.png"
+    }
+  ]
+}

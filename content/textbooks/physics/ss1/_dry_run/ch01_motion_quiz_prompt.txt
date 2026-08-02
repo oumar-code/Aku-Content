@@ -1,0 +1,22 @@
+Create a 10-question multiple-choice quiz for a Nigerian SS student studying Physics (SS1), topic: Motion.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "physics",
+  "level": "ss1",
+  "topic": "Motion",
+  "questions": [
+    {
+      "id": "Q001",
+      "body": "...",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "correct_option": 0,
+      "answer": "A. ...",
+      "explanation": "...",
+      "difficulty": "easy|medium|hard",
+      "marks": 1
+    }
+  ],
+  "generated_at": "2026-08-02T17:19:57.676986+00:00",
+  "generator": "aku-content-forge/text-stage"
+}

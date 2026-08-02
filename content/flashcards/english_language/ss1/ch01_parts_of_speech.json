@@ -1,0 +1,84 @@
+{
+  "subject": "english_language",
+  "level": "ss1",
+  "topic": "Parts of Speech",
+  "flashcards": [
+    {
+      "front": "Parts of Speech concept 1",
+      "back": "Preview flashcard answer 1 for Parts of Speech.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Parts of Speech concept 2",
+      "back": "Preview flashcard answer 2 for Parts of Speech.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Parts of Speech concept 3",
+      "back": "Preview flashcard answer 3 for Parts of Speech.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Parts of Speech concept 4",
+      "back": "Preview flashcard answer 4 for Parts of Speech.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Parts of Speech concept 5",
+      "back": "Preview flashcard answer 5 for Parts of Speech.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Parts of Speech concept 6",
+      "back": "Preview flashcard answer 6 for Parts of Speech.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Parts of Speech concept 7",
+      "back": "Preview flashcard answer 7 for Parts of Speech.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Parts of Speech concept 8",
+      "back": "Preview flashcard answer 8 for Parts of Speech.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Parts of Speech concept 9",
+      "back": "Preview flashcard answer 9 for Parts of Speech.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Parts of Speech concept 10",
+      "back": "Preview flashcard answer 10 for Parts of Speech.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Parts of Speech concept 11",
+      "back": "Preview flashcard answer 11 for Parts of Speech.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Parts of Speech concept 12",
+      "back": "Preview flashcard answer 12 for Parts of Speech.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Parts of Speech concept 13",
+      "back": "Preview flashcard answer 13 for Parts of Speech.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Parts of Speech concept 14",
+      "back": "Preview flashcard answer 14 for Parts of Speech.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Parts of Speech concept 15",
+      "back": "Preview flashcard answer 15 for Parts of Speech.",
+      "difficulty": "hard"
+    }
+  ],
+  "generated_at": "2026-08-02T17:15:16.202494+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

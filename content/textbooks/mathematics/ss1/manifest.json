@@ -1,0 +1,46 @@
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "chapter_count": 1,
+  "generated_at": "2026-08-02T17:07:23.017444+00:00",
+  "generator": "aku-content-forge",
+  "chapters": [
+    {
+      "subject": "mathematics",
+      "level": "ss1",
+      "chapter_number": 1,
+      "topic": "Indices",
+      "slug": "indices",
+      "b2": {
+        "chapter_json": "dry-run://aku-textbooks/mathematics/ss1/ch01_indices.json",
+        "chapter_md": "dry-run://aku-textbooks/mathematics/ss1/ch01_indices.md",
+        "flashcards": "dry-run://aku-textbooks/flashcards/mathematics/ss1/ch01_indices.json",
+        "quiz": "dry-run://aku-textbooks/quizzes/mathematics/ss1/ch01_indices.json",
+        "images": {
+          "thumbnail": "dry-run://aku-images/mathematics/ss1/ch01_indices_thumb.png",
+          "diagrams": [
+            "dry-run://aku-images/mathematics/ss1/ch01_indices_sec1_diag1.png"
+          ]
+        },
+        "audio": {},
+        "video": {
+          "explainer": "dry-run://aku-video/mathematics/ss1/ch01_indices.mp4"
+        }
+      },
+      "local": {
+        "chapter_json": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/ch01_indices.json",
+        "chapter_md": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/ch01_indices.md",
+        "flashcards": "/workspaces/Aku-Content/content/flashcards/mathematics/ss1/ch01_indices.json",
+        "quiz": "/workspaces/Aku-Content/content/quizzes/mathematics/ss1/ch01_indices.json"
+      },
+      "dry_run": {
+        "chapter_prompt": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_chapter_prompt.txt",
+        "flashcards_prompt": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_flashcards_prompt.txt",
+        "quiz_prompt": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_quiz_prompt.txt",
+        "images_prompts": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_images_prompts.json",
+        "audio_prompts": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_audio_prompts.json",
+        "video_prompt": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_video_prompt.txt"
+      }
+    }
+  ]
+}

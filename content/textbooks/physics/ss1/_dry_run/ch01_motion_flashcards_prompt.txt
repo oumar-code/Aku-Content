@@ -1,0 +1,15 @@
+Create a flashcard deck for a Nigerian SS student studying Physics (SS1), topic: Motion.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "physics",
+  "level": "ss1",
+  "topic": "Motion",
+  "flashcards": [
+    {"front": "...", "back": "...", "difficulty": "easy|medium|hard"}
+  ],
+  "generated_at": "2026-08-02T17:19:57.676986+00:00",
+  "generator": "aku-content-forge/text-stage"
+}
+
+Generate 15 flashcards covering key terms, formulas, and exam-style prompts.

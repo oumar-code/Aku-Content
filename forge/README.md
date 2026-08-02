@@ -109,6 +109,7 @@ and for long-term cost optimisation.
 
 ```bash
 python -m pip install -r forge/requirements.txt
+cp .env.example .env
 ```
 
 ### 2. Environment variables
@@ -117,11 +118,15 @@ python -m pip install -r forge/requirements.txt
 export B2_APPLICATION_KEY_ID="your-b2-key-id"
 export B2_APPLICATION_KEY="your-b2-application-key"
 export GENBLAZE_API_KEY="your-genblaze-api-key"
-export OPENAI_API_KEY="your-openai-key"          # for text stage
-export STABILITY_API_KEY="your-stability-key"    # for images stage
+export OPENAI_API_KEY="your-openai-key"          # for text + images stages
 export ELEVENLABS_API_KEY="your-elevenlabs-key"  # for audio stage
 export RUNWAY_API_KEY="your-runway-key"           # for video stage
+# Some Genblaze/Runway setups use this upstream variable name instead:
+export RUNWAYML_API_SECRET="your-runway-key"
 ```
+
+The repository root includes [.env.example](.env.example) with all required keys,
+optional provider keys, and voice ID placeholders.
 
 ### 3. Configure voice IDs
 
@@ -136,7 +141,29 @@ providers:
       yo: "<your-yoruba-voice-id>"
 ```
 
-### 4. Run the pipeline
+You can copy these IDs from the ElevenLabs dashboard after creating or cloning
+multilingual Hausa and Yoruba voices.
+
+### 4. Run preflight checks
+
+```bash
+# Check dependencies, environment variables, voice IDs, and B2 bucket access
+python -m forge.pipeline preflight
+```
+
+The current default config uses OpenAI for both text and image generation, so a
+green dependency check no longer requires a Stability adapter.
+
+### 5. Run the pipeline
+
+```bash
+# Safe local-only preview for one chapter
+python -m forge.pipeline \
+  --subject mathematics --level ss1 \
+  --stages text images audio video \
+  --chapters-only "Number Bases" \
+  --dry-run
+```
 
 ```bash
 # Full pipeline — Mathematics SS1 (all 4 stages)
@@ -158,7 +185,19 @@ for subject in mathematics biology chemistry physics english_language \
 done
 ```
 
-### 5. Python API
+The dry-run mode writes local preview files and prompt artifacts under
+`content/textbooks/<subject>/<level>/_dry_run/` and skips B2 uploads and all
+provider API calls.
+
+### 6. Remove dry-run previews
+
+```bash
+python -m forge.pipeline cleanup
+```
+
+This removes every `_dry_run/` directory under `content/textbooks/`.
+
+### 7. Python API
 
 ```python
 import yaml

@@ -1,0 +1,62 @@
+{
+  "subject": "physics",
+  "level": "ss1",
+  "chapter_number": 1,
+  "topic": "Motion",
+  "learning_objectives": [
+    "Define the core ideas in Motion",
+    "Solve basic exam-style questions on Motion",
+    "Relate Motion to real classroom examples"
+  ],
+  "introduction": "This dry-run chapter preview shows the file structure for Motion. It does not call an external model, but it preserves the expected output shape.",
+  "sections": [
+    {
+      "heading": "Foundations of Motion",
+      "body": "Preview content for Motion. Replace this with generated curriculum text during a live run.",
+      "worked_examples": [
+        "Worked example placeholder for Motion."
+      ],
+      "diagram_hints": [
+        "[DIAGRAM: labelled concept diagram for Motion]"
+      ]
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Motion",
+      "definition": "Preview definition for Motion."
+    },
+    {
+      "term": "Exam skill",
+      "definition": "Ability to answer curriculum-aligned questions."
+    }
+  ],
+  "summary": "Dry-run summary placeholder for Motion.",
+  "practice_questions": [
+    {
+      "type": "objective",
+      "question": "Which statement best describes Motion?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanation": "Preview explanation."
+    },
+    {
+      "type": "theory",
+      "question": "Explain one application of Motion.",
+      "options": [],
+      "answer": "Any correct curriculum-aligned explanation.",
+      "explanation": "Preview explanation."
+    }
+  ],
+  "further_reading": [
+    "NERDC scheme of work",
+    "Class notes and teacher-approved revision guides"
+  ],
+  "generated_at": "2026-08-02T17:19:57.676986+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

@@ -1,0 +1,17 @@
+Create an engaging 45-second educational explainer video script for a Nigerian high-school student.
+
+Subject: Chemistry
+Level: SS1
+Topic: Introduction to Chemistry
+
+Opening (5 s): hook question or surprising fact.
+Explanation (25 s): clear 3-point breakdown of the core concept.
+Worked example (10 s): one concrete real-world example from West Africa.
+Closing (5 s): key takeaway + call to action ("Try the practice questions!").
+
+Visual style: bright, animated infographic. No talking head. On-screen text for key terms. Upbeat background music.
+
+Return the script as a single paragraph of visual/narration directions that can be passed directly to a text-to-video API.
+
+
+Context from textbook: This dry-run chapter preview shows the file structure for Introduction to Chemistry. It does not call an external model, but it preserves the expected output shape.

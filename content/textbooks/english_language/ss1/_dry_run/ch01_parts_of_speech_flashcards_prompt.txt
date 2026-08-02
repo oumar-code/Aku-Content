@@ -1,0 +1,15 @@
+Create a flashcard deck for a Nigerian SS student studying English Language (SS1), topic: Parts of Speech.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "english_language",
+  "level": "ss1",
+  "topic": "Parts of Speech",
+  "flashcards": [
+    {"front": "...", "back": "...", "difficulty": "easy|medium|hard"}
+  ],
+  "generated_at": "2026-08-02T17:15:16.202494+00:00",
+  "generator": "aku-content-forge/text-stage"
+}
+
+Generate 15 flashcards covering key terms, formulas, and exam-style prompts.

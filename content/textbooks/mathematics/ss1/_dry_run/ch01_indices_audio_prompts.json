@@ -1,0 +1,58 @@
+{
+  "narrations": {
+    "en": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_narration_en.txt",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL"
+    },
+    "ha": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_narration_ha.txt",
+      "voice_id": ""
+    },
+    "yo": {
+      "script_path": "/workspaces/Aku-Content/content/textbooks/mathematics/ss1/_dry_run/ch01_indices_narration_yo.txt",
+      "voice_id": ""
+    }
+  },
+  "flashcards": [
+    {
+      "card_index": 1,
+      "text": "Indices concept 1"
+    },
+    {
+      "card_index": 2,
+      "text": "Indices concept 2"
+    },
+    {
+      "card_index": 3,
+      "text": "Indices concept 3"
+    },
+    {
+      "card_index": 4,
+      "text": "Indices concept 4"
+    },
+    {
+      "card_index": 5,
+      "text": "Indices concept 5"
+    },
+    {
+      "card_index": 6,
+      "text": "Indices concept 6"
+    },
+    {
+      "card_index": 7,
+      "text": "Indices concept 7"
+    },
+    {
+      "card_index": 8,
+      "text": "Indices concept 8"
+    },
+    {
+      "card_index": 9,
+      "text": "Indices concept 9"
+    },
+    {
+      "card_index": 10,
+      "text": "Indices concept 10"
+    }
+  ]
+}

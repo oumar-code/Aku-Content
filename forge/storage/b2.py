@@ -18,6 +18,7 @@ Environment variables required:
 from __future__ import annotations
 
 import hashlib
+import importlib
 import json
 import logging
 import mimetypes
@@ -30,25 +31,25 @@ from typing import Any
 # the metadata key name and any encoding overhead.
 B2_METADATA_MAX_BYTES = 1900
 
-import boto3
-from botocore.config import Config
-
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Bucket name helpers
 # ---------------------------------------------------------------------------
 
-BUCKET_MAP = {
-    "textbooks": "aku-textbooks",
-    "images":    "aku-images",
-    "audio":     "aku-audio",
-    "video":     "aku-video",
+BUCKET_SUFFIXES = {
+    "textbooks": "textbooks",
+    "images":    "images",
+    "audio":     "audio",
+    "video":     "video",
 }
 
 
-def _bucket_name(asset_type: str) -> str:
-    return BUCKET_MAP.get(asset_type, f"aku-{asset_type}")
+def _build_bucket_map(bucket_prefix: str) -> dict[str, str]:
+    return {
+        asset_type: f"{bucket_prefix}-{suffix}"
+        for asset_type, suffix in BUCKET_SUFFIXES.items()
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -58,19 +59,31 @@ def _bucket_name(asset_type: str) -> str:
 class B2Client:
     """Thin wrapper around the S3-compatible Backblaze B2 API."""
 
-    def __init__(self, cfg: dict[str, Any]) -> None:
+    def __init__(self, cfg: dict[str, Any], local_only: bool = False) -> None:
         b2_cfg = cfg.get("b2", {})
+        self.local_only = local_only
+        self.bucket_prefix = b2_cfg.get("bucket_prefix", "aku")
+        self.bucket_map = _build_bucket_map(self.bucket_prefix)
         self.region = b2_cfg.get("region", "us-west-004")
         self.cdn_base_url: str = b2_cfg.get("cdn_base_url", "")
         self.public_cdn: bool = b2_cfg.get("public_cdn", True)
+        self._s3: Any | None = None
+
+        if self.local_only:
+            logger.info(
+                "B2Client initialised in local-only mode — uploads will be skipped"
+            )
+            return
 
         endpoint = f"https://s3.{self.region}.backblazeb2.com"
+        boto3 = importlib.import_module("boto3")
+        config_cls = importlib.import_module("botocore.config").Config
         self._s3 = boto3.client(
             "s3",
             endpoint_url=endpoint,
             aws_access_key_id=os.environ["B2_APPLICATION_KEY_ID"],
             aws_secret_access_key=os.environ["B2_APPLICATION_KEY"],
-            config=Config(signature_version="s3v4"),
+            config=config_cls(signature_version="s3v4"),
             region_name=self.region,
         )
         logger.info("B2Client initialised — endpoint: %s", endpoint)
@@ -99,10 +112,15 @@ class B2Client:
         Returns:
             Public URL string.
         """
-        bucket = _bucket_name(asset_type)
+        bucket = self.bucket_name(asset_type)
         if content_type is None:
             content_type, _ = mimetypes.guess_type(object_key)
             content_type = content_type or "application/octet-stream"
+
+        if self.local_only:
+            url = self._dry_run_url(bucket, object_key)
+            logger.info("Local-only upload skipped: %s", url)
+            return url
 
         extra_args: dict[str, Any] = {"ContentType": content_type}
         if self.public_cdn:
@@ -151,16 +169,52 @@ class B2Client:
 
     def ensure_buckets(self) -> None:
         """Create any missing B2 buckets (idempotent)."""
+        if self.local_only:
+            logger.info("Local-only mode — bucket creation skipped")
+            return
+
         existing = {
             b["Name"]
             for b in self._s3.list_buckets().get("Buckets", [])
         }
-        for bucket in BUCKET_MAP.values():
+        for bucket in self.bucket_map.values():
             if bucket not in existing:
                 self._s3.create_bucket(Bucket=bucket)
                 logger.info("Created bucket: %s", bucket)
             else:
                 logger.debug("Bucket already exists: %s", bucket)
+
+    def check_access(self) -> dict[str, Any]:
+        """Report whether configured buckets are visible to the current credentials."""
+        if self.local_only:
+            return {
+                "ok": True,
+                "mode": "local-only",
+                "buckets": self.bucket_names(),
+            }
+
+        existing = {
+            bucket["Name"]
+            for bucket in self._s3.list_buckets().get("Buckets", [])
+        }
+        status = {
+            asset_type: {
+                "bucket": bucket,
+                "exists": bucket in existing,
+            }
+            for asset_type, bucket in self.bucket_map.items()
+        }
+        return {
+            "ok": all(item["exists"] for item in status.values()),
+            "mode": "live",
+            "buckets": status,
+        }
+
+    def bucket_name(self, asset_type: str) -> str:
+        return self.bucket_map.get(asset_type, f"{self.bucket_prefix}-{asset_type}")
+
+    def bucket_names(self) -> dict[str, str]:
+        return dict(self.bucket_map)
 
     # ------------------------------------------------------------------
     # Helpers
@@ -172,6 +226,9 @@ class B2Client:
         return (
             f"https://{bucket}.s3.{self.region}.backblazeb2.com/{key}"
         )
+
+    def _dry_run_url(self, bucket: str, key: str) -> str:
+        return f"dry-run://{bucket}/{key}"
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+Create a 10-question multiple-choice quiz for a Nigerian SS student studying Chemistry (SS1), topic: Introduction to Chemistry.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "chemistry",
+  "level": "ss1",
+  "topic": "Introduction to Chemistry",
+  "questions": [
+    {
+      "id": "Q001",
+      "body": "...",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "correct_option": 0,
+      "answer": "A. ...",
+      "explanation": "...",
+      "difficulty": "easy|medium|hard",
+      "marks": 1
+    }
+  ],
+  "generated_at": "2026-08-02T17:08:40.764250+00:00",
+  "generator": "aku-content-forge/text-stage"
+}

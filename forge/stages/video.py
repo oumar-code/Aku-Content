@@ -20,12 +20,11 @@ For the hackathon demo a single chapter video is sufficient.
 
 from __future__ import annotations
 
+import importlib
 import json
 import logging
 from pathlib import Path
 from typing import Any
-
-import genblaze  # type: ignore[import-untyped]
 
 from forge.storage.b2 import B2Client, build_provenance
 
@@ -62,15 +61,23 @@ can be passed directly to a text-to-video API.
 class VideoStage:
     """Generate concept explainer video clips for each chapter."""
 
-    def __init__(self, cfg: dict[str, Any], b2: B2Client) -> None:
+    def __init__(
+        self,
+        cfg: dict[str, Any],
+        b2: B2Client,
+        dry_run: bool = False,
+    ) -> None:
         self.cfg = cfg
         self.b2 = b2
+        self.dry_run = dry_run
         vid_cfg = cfg["providers"]["video"]
         self.provider = vid_cfg["provider"]
         self.model = vid_cfg["model"]
         self.duration = vid_cfg.get("duration_seconds", 45)
         self.resolution = vid_cfg.get("resolution", "1280x720")
-        self._client = genblaze.Client()
+        self._client: Any | None = None
+        if not self.dry_run:
+            self._client = importlib.import_module("genblaze").Client()
 
     # ------------------------------------------------------------------
     # Public entry point
@@ -79,18 +86,18 @@ class VideoStage:
     def run(
         self,
         manifests: list[dict[str, Any]],
-        repo_root: Path,  # noqa: ARG002 — reserved for local caching
+        repo_root: Path,
     ) -> list[dict[str, Any]]:
         """Enrich each manifest with video URLs. Modifies in-place."""
         for manifest in manifests:
-            self._process_chapter(manifest)
+            self._process_chapter(manifest, repo_root)
         return manifests
 
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
 
-    def _process_chapter(self, manifest: dict[str, Any]) -> None:
+    def _process_chapter(self, manifest: dict[str, Any], repo_root: Path) -> None:
         subject = manifest["subject"]
         level   = manifest["level"]
         chapter = manifest["chapter_number"]
@@ -119,6 +126,19 @@ class VideoStage:
         if extra_context:
             script_prompt += f"\n\nContext from textbook: {extra_context}"
 
+        if self.dry_run:
+            preview_dir = _preview_dir(repo_root, self.cfg, subject, level)
+            preview_dir.mkdir(parents=True, exist_ok=True)
+            prompt_path = preview_dir / f"ch{chapter:02d}_{slug}_video_prompt.txt"
+            prompt_path.write_text(script_prompt, encoding="utf-8")
+            manifest.setdefault("dry_run", {})["video_prompt"] = str(prompt_path)
+            manifest.setdefault("b2", {})["video"] = {
+                "explainer": self.b2.upload_bytes(
+                    b"", "video", f"{subject}/{level}/ch{chapter:02d}_{slug}.mp4", "video/mp4"
+                )
+            }
+            return
+
         # Optional: thumbnail image as the first frame seed
         thumbnail_url = (
             manifest.get("b2", {})
@@ -140,6 +160,8 @@ class VideoStage:
         logger.info("    Video uploaded: %s", url)
 
     def _generate_video(self, prompt: str, image_url: str = "") -> bytes:
+        if self._client is None:
+            raise RuntimeError("Genblaze client is unavailable in dry-run mode")
         kwargs: dict[str, Any] = {
             "provider": self.provider,
             "model": self.model,
@@ -150,3 +172,12 @@ class VideoStage:
             kwargs["image_url"] = image_url
         response = self._client.generate_video(**kwargs)
         return response.video_bytes
+
+
+def _preview_dir(
+    repo_root: Path,
+    cfg: dict[str, Any],
+    subject: str,
+    level: str,
+) -> Path:
+    return repo_root / cfg["output"]["textbooks"] / subject / level / "_dry_run"

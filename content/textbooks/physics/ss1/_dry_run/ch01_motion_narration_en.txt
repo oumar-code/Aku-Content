@@ -1,0 +1,1 @@
+Chapter topic: Motion. This dry-run chapter preview shows the file structure for Motion. It does not call an external model, but it preserves the expected output shape. Summary: Dry-run summary placeholder for Motion.

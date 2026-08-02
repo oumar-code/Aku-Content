@@ -1,0 +1,15 @@
+Create a flashcard deck for a Nigerian SS student studying Biology (SS1), topic: Nutrition.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "biology",
+  "level": "ss1",
+  "topic": "Nutrition",
+  "flashcards": [
+    {"front": "...", "back": "...", "difficulty": "easy|medium|hard"}
+  ],
+  "generated_at": "2026-08-02T17:06:04.537874+00:00",
+  "generator": "aku-content-forge/text-stage"
+}
+
+Generate 15 flashcards covering key terms, formulas, and exam-style prompts.

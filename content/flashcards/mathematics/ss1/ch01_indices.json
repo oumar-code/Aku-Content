@@ -1,0 +1,84 @@
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "topic": "Indices",
+  "flashcards": [
+    {
+      "front": "Indices concept 1",
+      "back": "Preview flashcard answer 1 for Indices.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Indices concept 2",
+      "back": "Preview flashcard answer 2 for Indices.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Indices concept 3",
+      "back": "Preview flashcard answer 3 for Indices.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Indices concept 4",
+      "back": "Preview flashcard answer 4 for Indices.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Indices concept 5",
+      "back": "Preview flashcard answer 5 for Indices.",
+      "difficulty": "easy"
+    },
+    {
+      "front": "Indices concept 6",
+      "back": "Preview flashcard answer 6 for Indices.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Indices concept 7",
+      "back": "Preview flashcard answer 7 for Indices.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Indices concept 8",
+      "back": "Preview flashcard answer 8 for Indices.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Indices concept 9",
+      "back": "Preview flashcard answer 9 for Indices.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Indices concept 10",
+      "back": "Preview flashcard answer 10 for Indices.",
+      "difficulty": "medium"
+    },
+    {
+      "front": "Indices concept 11",
+      "back": "Preview flashcard answer 11 for Indices.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Indices concept 12",
+      "back": "Preview flashcard answer 12 for Indices.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Indices concept 13",
+      "back": "Preview flashcard answer 13 for Indices.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Indices concept 14",
+      "back": "Preview flashcard answer 14 for Indices.",
+      "difficulty": "hard"
+    },
+    {
+      "front": "Indices concept 15",
+      "back": "Preview flashcard answer 15 for Indices.",
+      "difficulty": "hard"
+    }
+  ],
+  "generated_at": "2026-08-02T17:07:23.013820+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

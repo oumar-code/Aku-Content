@@ -40,8 +40,8 @@ providers:
     max_tokens: 4096
 
   images:
-    provider: stability       # stability | openai (dall-e-3)
-    model: stable-diffusion-3-medium
+    provider: openai          # openai (dall-e-3)
+    model: dall-e-3
     width: 1024
     height: 1024
     steps: 30

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <rect x="60" y="60" width="1080" height="580" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="90" y="150" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">Flashcards Preview</text>
+  <rect x="90" y="210" width="320" height="180" rx="18" fill="#fef3c7"/>
+  <text x="120" y="270" font-family="Arial, sans-serif" font-size="24" fill="#92400e">Q: What is motion?</text>
+  <text x="120" y="320" font-family="Arial, sans-serif" font-size="20" fill="#78350f">A: Change in position over time</text>
+  <rect x="440" y="210" width="320" height="180" rx="18" fill="#ede9fe"/>
+  <text x="470" y="270" font-family="Arial, sans-serif" font-size="24" fill="#5b21b6">Q: What is speed?</text>
+  <text x="470" y="320" font-family="Arial, sans-serif" font-size="20" fill="#4c1d95">A: Distance covered per unit time</text>
+  <rect x="790" y="210" width="320" height="180" rx="18" fill="#dcfce7"/>
+  <text x="820" y="270" font-family="Arial, sans-serif" font-size="24" fill="#166534">Q: What is velocity?</text>
+  <text x="820" y="320" font-family="Arial, sans-serif" font-size="20" fill="#14532d">A: Speed in a given direction</text>
+</svg>

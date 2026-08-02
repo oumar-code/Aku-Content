@@ -1,0 +1,62 @@
+{
+  "subject": "mathematics",
+  "level": "ss1",
+  "chapter_number": 1,
+  "topic": "Number Bases",
+  "learning_objectives": [
+    "Define the core ideas in Number Bases",
+    "Solve basic exam-style questions on Number Bases",
+    "Relate Number Bases to real classroom examples"
+  ],
+  "introduction": "This dry-run chapter preview shows the file structure for Number Bases. It does not call an external model, but it preserves the expected output shape.",
+  "sections": [
+    {
+      "heading": "Foundations of Number Bases",
+      "body": "Preview content for Number Bases. Replace this with generated curriculum text during a live run.",
+      "worked_examples": [
+        "Worked example placeholder for Number Bases."
+      ],
+      "diagram_hints": [
+        "[DIAGRAM: labelled concept diagram for Number Bases]"
+      ]
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Number Bases",
+      "definition": "Preview definition for Number Bases."
+    },
+    {
+      "term": "Exam skill",
+      "definition": "Ability to answer curriculum-aligned questions."
+    }
+  ],
+  "summary": "Dry-run summary placeholder for Number Bases.",
+  "practice_questions": [
+    {
+      "type": "objective",
+      "question": "Which statement best describes Number Bases?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanation": "Preview explanation."
+    },
+    {
+      "type": "theory",
+      "question": "Explain one application of Number Bases.",
+      "options": [],
+      "answer": "Any correct curriculum-aligned explanation.",
+      "explanation": "Preview explanation."
+    }
+  ],
+  "further_reading": [
+    "NERDC scheme of work",
+    "Class notes and teacher-approved revision guides"
+  ],
+  "generated_at": "2026-08-02T16:57:21.627579+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

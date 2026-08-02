@@ -1,0 +1,1 @@
+Chapter topic: Parts of Speech. This dry-run chapter preview shows the file structure for Parts of Speech. It does not call an external model, but it preserves the expected output shape. Summary: Dry-run summary placeholder for Parts of Speech.

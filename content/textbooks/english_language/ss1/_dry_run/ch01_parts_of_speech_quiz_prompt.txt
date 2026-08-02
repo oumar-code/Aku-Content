@@ -1,0 +1,22 @@
+Create a 10-question multiple-choice quiz for a Nigerian SS student studying English Language (SS1), topic: Parts of Speech.
+
+Return ONLY valid JSON — no markdown fences:
+{
+  "subject": "english_language",
+  "level": "ss1",
+  "topic": "Parts of Speech",
+  "questions": [
+    {
+      "id": "Q001",
+      "body": "...",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "correct_option": 0,
+      "answer": "A. ...",
+      "explanation": "...",
+      "difficulty": "easy|medium|hard",
+      "marks": 1
+    }
+  ],
+  "generated_at": "2026-08-02T17:15:16.202494+00:00",
+  "generator": "aku-content-forge/text-stage"
+}

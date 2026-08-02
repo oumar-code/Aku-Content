@@ -1,0 +1,159 @@
+{
+  "subject": "biology",
+  "level": "ss1",
+  "topic": "Nutrition",
+  "questions": [
+    {
+      "id": "Q001",
+      "body": "Preview quiz question 1 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 1.",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "id": "Q002",
+      "body": "Preview quiz question 2 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 2.",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "id": "Q003",
+      "body": "Preview quiz question 3 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 3.",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "id": "Q004",
+      "body": "Preview quiz question 4 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 4.",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "id": "Q005",
+      "body": "Preview quiz question 5 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 5.",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "id": "Q006",
+      "body": "Preview quiz question 6 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 6.",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "id": "Q007",
+      "body": "Preview quiz question 7 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 7.",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "id": "Q008",
+      "body": "Preview quiz question 8 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 8.",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "id": "Q009",
+      "body": "Preview quiz question 9 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 9.",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "id": "Q010",
+      "body": "Preview quiz question 10 on Nutrition.",
+      "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+      ],
+      "correct_option": 0,
+      "answer": "A. Option one",
+      "explanation": "Preview explanation for question 10.",
+      "difficulty": "hard",
+      "marks": 1
+    }
+  ],
+  "generated_at": "2026-08-02T17:06:04.537874+00:00",
+  "generator": "aku-content-forge/text-stage-dry-run"
+}

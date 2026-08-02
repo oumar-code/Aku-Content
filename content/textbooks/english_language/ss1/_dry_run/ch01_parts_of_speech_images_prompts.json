@@ -1,0 +1,11 @@
+{
+  "thumbnail_prompt": "A clean, colourful educational poster thumbnail for a Nigerian SS textbook chapter. Topic: Parts of Speech. Subject: English Language. Bold title text, simple icons, bright colours, academic style, white background.",
+  "diagram_prompts": [
+    {
+      "section": 1,
+      "diagram_index": 1,
+      "prompt": "Educational diagram for a Nigerian high-school english_language textbook. Topic: Parts of Speech. Diagram: labelled concept diagram for Parts of Speech. Clean white background, accurate scientific labels, vector illustration style.",
+      "object_key": "english_language/ss1/ch01_parts_of_speech_sec1_diag1.png"
+    }
+  ]
+}
